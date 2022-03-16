@@ -11,76 +11,84 @@
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/1c466c7021.js" crossorigin="anonymous"></script>
-  </head>
-
   <!-- css -->
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/1c466c7021.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- css -->
+<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <!-- header -->
 
-    <!-- nav-bar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" width="48" height="31"><img src="images/logo.svg"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="navbar-item"><a class="nav-link" href="">My Profile</a></li>
-            <li class="navbar-item"><a class="nav-link" href="">Setting</a></li>
-            <li class="navbar-item"><a class="nav-link" href="">Log out</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- manu bar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav nav-justified w-100 text-center flex-row">
-          <li class="nav-item">
-            <a href="#" class="nav-link d-flex flex-column">
-              <i class="fa-solid fa-house-chimney"></i>
-              <span class="d-none d-sm-inline">Home</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link d-flex flex-column">
-              <i class="fa-solid fa-map"></i>
-              <span class="d-none d-sm-inline">Map</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link d-flex flex-column">
-              <i class="fa-solid fa-calendar"></i>
-              <span class="d-none d-sm-inline">Event</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link d-flex flex-column">
-              <i class="fa-solid fa-clock-rotate-left"></i>
-              <span class="d-none d-sm-inline">History</span>
-            </a>
-          </li>
+  <!-- nav-bar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" width="48" height="31"><img src="images/logo.svg"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="navbar-item"><a class="nav-link" href="">My Profile</a></li>
+          <li class="navbar-item"><a class="nav-link" href="">Setting</a></li>
+          <li class="navbar-item"><a class="nav-link" href="">Log out</a></li>
         </ul>
       </div>
-    </nav>
-
-
-  <!-- search bar -->
-  <form autocomplete="off" action="/action_page.php">
-    <div class="autocomplete" style="width: 300px;">
-      <input type="text" name="" id="myInput">
     </div>
-    <button class="btn btn-dark" type="submit"><i class="fa fa-search"></i>
-    </button>
-  </form>
+  </nav>
+
+  <!-- manu bar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav nav-justified w-100 text-center flex-row">
+        <li class="nav-item">
+          <a href="#" class="nav-link d-flex flex-column">
+            <i class="fa-solid fa-house-chimney"></i>
+            <span class="d-none d-sm-inline">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link d-flex flex-column">
+            <i class="fa-solid fa-map"></i>
+            <span class="d-none d-sm-inline">Map</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link d-flex flex-column">
+            <i class="fa-solid fa-calendar"></i>
+            <span class="d-none d-sm-inline">Event</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link d-flex flex-column">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span class="d-none d-sm-inline">History</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- jumbotron -->
+  <div class="p-5 mb-4 bg-light rounded-3 text-center">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold pb-3">NEXT GAMES</h1>
+
+      <!-- search bar -->
+      <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete d-inline-block">
+          <input type="text" name="" id="myInput">
+        </div>
+        <button class="btn btn-dark btn-lg" type="submit"><i class="fa fa-search"></i>
+        </button>
+      </form>
+
+    </div>
+  </div>
+
 
 
   <!-- hooter -->
