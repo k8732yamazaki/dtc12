@@ -8,69 +8,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- firebase -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+  <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!-- css -->
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://kit.fontawesome.com/1c466c7021.js" crossorigin="anonymous"></script>
-</head>
 
-<!-- css -->
-<link rel="stylesheet" href="css/styles.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/1c466c7021.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- header -->
-
-  <!-- nav-bar -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" width="48" height="31"><img src="images/logo.svg"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="navbar-item"><a class="nav-link" href="">My Profile</a></li>
-          <li class="navbar-item"><a class="nav-link" href="">Setting</a></li>
-          <li class="navbar-item"><a class="nav-link" href="">Log In</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- manu bar -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-    <div class="container-fluid">
-      <ul class="navbar-nav nav-justified w-100 text-center flex-row">
-        <li class="nav-item">
-          <a href="#" class="nav-link d-flex flex-column text-white">
-            <i class="fa-solid fa-house-chimney"></i>
-            <span class="d-none d-sm-inline">Home</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link d-flex flex-column text-white">
-            <i class="fa-solid fa-map"></i>
-            <span class="d-none d-sm-inline">Map</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link d-flex flex-column text-white">
-            <i class="fa-solid fa-calendar"></i>
-            <span class="d-none d-sm-inline">Event</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link d-flex flex-column text-white">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <span class="d-none d-sm-inline">History</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <nav id="navbarPlaceholder"></nav>
 
   <!-- jumbotron -->
   <div class="p-5 mb-4 bg-light rounded-3 text-center">
@@ -96,10 +54,10 @@
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner my-5">
       <div class="carousel-item active">
         <img class="bd-placeholder-img" width="100%" height="100%" src="images/olympics01.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="#777" /></img>
+        <rect width="100%" height="100%" fill="#777" /></img>
 
         <div class="container">
           <div class="carousel-caption text-start">
@@ -110,7 +68,7 @@
       </div>
       <div class="carousel-item">
         <img class="bd-placeholder-img" width="100%" height="100%" src="images/olympics02.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="#777" /></img>
+        <rect width="100%" height="100%" fill="#777" /></img>
 
         <div class="container">
           <div class="carousel-caption">
@@ -121,7 +79,7 @@
       </div>
       <div class="carousel-item">
         <img class="bd-placeholder-img" width="100%" height="100%" src="images/olympics03.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="#777" /></svg>
+        <rect width="100%" height="100%" fill="#777" /></svg>
 
         <div class="container">
           <div class="carousel-caption text-end">
@@ -144,30 +102,14 @@
 
 
   <!-- footer -->
-  <div class="container-fluid bg-dark sticky-bottom">
-    <footer class="py-3 mt-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Olympic Committee</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Museum</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About Us</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Career</a></li>
-      </ul>
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-white">
-        <li class="nav-item mx-2"><i class="fa-brands fa-facebook-square fa-xl"></i></li>
-        <li class="nav-item mx-2"><i class="fa-brands fa-twitter-square fa-xl"></i></li>
-        <li class="nav-item mx-2"><i class="fa-brands fa-instagram fa-xl"></i></li>
-        <li class="nav-item mx-2"><i class="fa-brands fa-youtube fa-xl"></i></li>
-      </ul>
-      <p class="text-center text-muted">&copy; 2022 BCIT DTC-12</p>
-    </footer>
-  </div>
+  <nav id="footerPlaceholder"></nav>
 
 
 
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+  <script src="scripts/global.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
