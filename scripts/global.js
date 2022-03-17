@@ -1,5 +1,6 @@
 function loadSkeleton(){
-    console.log($('#navbarPlaceholder').load('../partials/header.html'));
+    console.log($('#headerPlaceholder').load('../partials/header.html'));
+    console.log($('#menubarPlaceholder').load('../partials/menubar.html'));
     console.log($('#footerPlaceholder').load('../partials/footer.html'));
 }
 
