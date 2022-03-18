@@ -4,7 +4,16 @@
 	--white: #F5F5F5;
 	--red: #F05454;
 }
-
+body {
+	background-color: var(--white);
+}
+#footerPlaceholder,
+.navbar {
+	background-color: var(--black);	
+}
+#menubarPlaceholder .navbar {
+	background-color: var(--navy);	
+}
 .carousel-bg img {
 	position: absolute;
 	width: 70%;
