@@ -1,0 +1,36 @@
+.carousel__bg img {
+	position: absolute;
+	width: 70%;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.carousel__bg::before {
+	display: block;
+    background-image: url(/images/olympics01.jpg);
+    background-size: cover;
+    background-position: 0 center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    content: "";
+    width: 100%;
+    height: 50vh;
+}
+.carousel__bg:nth-child(2)::before {
+    background-image: url(/images/olympics02.jpg);
+}
+.carousel__bg:last-child::before {
+    background-image: url(/images/olympics03.jpg);
+}
+@media screen and (max-width:768px) {
+	.carousel__bg::before,
+	.carousel__bg:nth-child(2)::before,
+	.carousel__bg:last-child::before {
+		background-image: none;
+	}
+	.carousel__bg img {
+		width: 100%;
+	}
+}
