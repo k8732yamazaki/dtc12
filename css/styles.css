@@ -9,7 +9,7 @@
 }
 .carousel__bg::before {
 	display: block;
-    background-image: url(file:///Users/yamazakikaori/dtc12/images/olympics01.jpg);
+    background-image: url(images/olympics01.jpg);
     background-size: cover;
     background-position: 0 center;
     filter: blur(8px);
@@ -19,10 +19,10 @@
     height: 50vh;
 }
 .carousel__bg:nth-child(2)::before {
-    background-image: url(file:///Users/yamazakikaori/dtc12/images/olympics02.jpg);
+    background-image: url(images/olympics02.jpg);
 }
 .carousel__bg:last-child::before {
-    background-image: url(file:///Users/yamazakikaori/dtc12/images/olympics03.jpg);
+    background-image: url(images/olympics03.jpg);
 }
 @media screen and (max-width:768px) {
 	.carousel__bg::before,
