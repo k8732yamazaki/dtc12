@@ -40,6 +40,12 @@ body {
 .carousel-bg:last-child::before {
     background-image: url(/images/olympics03.jpg);
 }
+.btn-floating {
+	z-index: 1;
+}
+.btn-floating button {
+	background-color: var(--red);
+}
 @media screen and (max-width:768px) {
 	.carousel-bg::before,
 	.carousel-bg:nth-child(2)::before,
@@ -48,5 +54,11 @@ body {
 	}
 	.carousel-bg img {
 		width: 100%;
+	}
+}
+@media screen and (min-width:768px) {
+	.btn-floating button {
+		width: 10vh;
+		height: 10vh;
 	}
 }
