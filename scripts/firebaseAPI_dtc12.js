@@ -40,4 +40,6 @@ function displayCards(collection) {
     })
 }
 
-displayCards("events");
+if($("body").is("#eventsPage")){
+  displayCards("events");
+}
