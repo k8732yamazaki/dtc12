@@ -1,4 +1,11 @@
-.carousel__bg img {
+:root {
+	--black: #121212;
+	--navy: #30475E;
+	--white: #F5F5F5;
+	--red: #F05454;
+}
+
+.carousel-bg img {
 	position: absolute;
 	width: 70%;
 	margin: auto;
@@ -7,7 +14,7 @@
 	bottom: 0;
 	left: 0;
 }
-.carousel__bg::before {
+.carousel-bg::before {
 	display: block;
     background-image: url(/images/olympics01.jpg);
     background-size: cover;
@@ -18,19 +25,19 @@
     width: 100%;
     height: 50vh;
 }
-.carousel__bg:nth-child(2)::before {
+.carousel-bg:nth-child(2)::before {
     background-image: url(/images/olympics02.jpg);
 }
-.carousel__bg:last-child::before {
+.carousel-bg:last-child::before {
     background-image: url(/images/olympics03.jpg);
 }
 @media screen and (max-width:768px) {
-	.carousel__bg::before,
-	.carousel__bg:nth-child(2)::before,
-	.carousel__bg:last-child::before {
+	.carousel-bg::before,
+	.carousel-bg:nth-child(2)::before,
+	.carousel-bg:last-child::before {
 		background-image: none;
 	}
-	.carousel__bg img {
+	.carousel-bg img {
 		width: 100%;
 	}
 }
