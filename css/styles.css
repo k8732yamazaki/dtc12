@@ -4,16 +4,22 @@
 	--white: #F5F5F5;
 	--red: #F05454;
 }
-body {
+.white {
 	background-color: var(--white);
 }
-#footerPlaceholder,
-.navbar {
-	background-color: var(--black);	
+
+.black {
+	background-color: var(--black);
 }
-#menubarPlaceholder .navbar {
-	background-color: var(--navy);	
+
+.navy {
+	background-color: var(--navy);
 }
+
+.red {
+	background-color: var(--red);
+}
+
 .carousel-bg img {
 	position: absolute;
 	width: 70%;
@@ -43,9 +49,7 @@ body {
 .btn-floating {
 	z-index: 1;
 }
-.btn-floating button {
-	background-color: var(--red);
-}
+
 @media screen and (max-width:768px) {
 	.carousel-bg::before,
 	.carousel-bg:nth-child(2)::before,
