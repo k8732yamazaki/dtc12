@@ -33,25 +33,33 @@
   <nav id="menubarPlaceholder" class="navy sticky-top"></nav>
 
   <!-- edit -->
-  <main class="form-signin text-center my-5">
-    <form>
-      <h2 class="h-50 fw-normal mb-1">Welcom to</h2>
-      <h1 class="h-75 fw-bold mb-3">pocketBook</h1>
+  <main class="form-profile text-center my-5">
+    <div class="profile-icon text-white rounded-circle navy p-4"><i class="fa-solid fa-user fs-3"></i></div>
+      <form>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput">
+          <label for="floatingInput">Name</label>
+        </div>
+        <span class="not-rounded">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingEmail">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="tel" class="form-control" id="floatingEmail">
+            <label for="floatingInput">Phone number</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingEmail">
+            <label for="floatingInput">Address</label>
+          </div>
+        </span>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword">
+          <label for="floatingPassword">Password</label>
+        </div>
 
-      <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Name</label>
-      </div>
-      <div class="form-floating">
-        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
-        <label for="floatingInput">Email address</label>
-      </div>
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <label for="floatingPassword">Password</label>
-      </div>
-
-      <button class="w-100 btn btn-lg btn-dark" type="submit">Save</button>
+      <button class="w-100 btn btn-lg navy text-white" type="submit">Save</button>
     </form>
   </main>
 
