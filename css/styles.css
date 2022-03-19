@@ -62,7 +62,7 @@ input {
   padding: 10px;
   font-size: 16px;
 }
-input[type=text] {
+.autocomplete input[type=text] {
   background-color: #f1f1f1;
   width: 100%;
 }
@@ -96,6 +96,12 @@ input[type=submit] {
   background-color: DodgerBlue !important;
   color: #ffffff;
 }
+.profile-icon { 
+    width: 10vh;
+    height: 10vh;
+    margin: 0 auto;
+}
+
 
 /* media query */
 @media screen and (max-width:768px) {
