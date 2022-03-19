@@ -21,8 +21,7 @@
 
   <!-- css -->
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/login.css">
-
+  <link rel="stylesheet" href="css/profile.css">
 
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/1c466c7021.js" crossorigin="anonymous"></script>
@@ -33,16 +32,39 @@
   <nav id="headerPlaceholder" class="black"></nav>
   <nav id="menubarPlaceholder" class="navy sticky-top"></nav>
 
-  <!-- login -->
-  <div id="firebaseui-auth-container" class="my-5"></div>
+  <!-- edit -->
+  <main class="form-signin text-center my-5">
+    <form>
+      <h2 class="h-50 fw-normal mb-1">Welcom to</h2>
+      <h1 class="h-75 fw-bold mb-3">pocketBook</h1>
+
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <button class="w-100 btn btn-lg btn-dark" type="submit">Save</button>
+    </form>
+  </main>
+
+  <!-- floating button -->
+  <div id="buttonPlaceholder"></div>
 
   <!-- footer -->
   <nav id="footerPlaceholder" class="black"></nav>
 
+
+
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="scripts/firebaseAPI_dtc12.js"></script>
-  <script src="./scripts/authentication.js"></script>
   <script src="scripts/global.js"></script>
   <script src="scripts/main.js"></script>
 </body>
