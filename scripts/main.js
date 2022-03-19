@@ -5,12 +5,12 @@ async function readJSON() {
   )
   const data = await response.text(); //get text file, string
   const sportsEvents = JSON.parse(data); //convert to JSON
-  console.log(sportsEvents);
+  // console.log(sportsEvents);
   for (x of sportsEvents["data"]) { //iterate thru each hero
     let name = x.attributes.name;
     let details = x.attributes.description;
     let image = x.relationships.images.data[0];
-    console.log(image);
+    // console.log(image);
     i++
     if (i <= 50) {
       db.collection("events").add({

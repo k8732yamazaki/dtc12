@@ -26,109 +26,38 @@
   <script src="https://kit.fontawesome.com/1c466c7021.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="white">
+<body id="historyPage" class="white">
   <!-- header -->
   <nav id="headerPlaceholder" class="black"></nav>
   <nav id="menubarPlaceholder" class="navy sticky-top"></nav>
 
   <!-- history -->
-  <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
-    <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-      <svg class="bi me-2" width="30" height="24">
-        <use xlink:href="#bootstrap" /></svg>
-      <span class="fs-5 fw-semibold">History</span>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Tues</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Mon</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Wed</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Tues</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Mon</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Wed</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Tues</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Mon</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Wed</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Tues</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1">List group item heading</strong>
-        <small class="text-muted">Mon</small>
-      </div>
-      <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-    </a>
-  </div>
+  <div class="container">
+    <h1 class="my-5 pb-4 border-bottom border-dark">Recent Scans</h1>
+    <div id="historyList" class="d-flex flex-column align-items-stretch flex-shrink-0">
+      <template id="historyTemplate">
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">Past Scan</strong>
+            <small class="text-muted"><i class="fa-solid fa-location-dot"></i></small>
+          </div>
+          <div class="time-stamp col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+      </template>
+    </div>
   </div>
 
   <!-- floating button -->
   <div id="buttonPlaceholder"></div>
 
   <!-- footer -->
-  <nav id="footerPlaceholder"></nav>
+  <nav id="footerPlaceholder" class="black"></nav>
 
 
 
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="scripts/firebaseAPI_dtc12.js"></script>
   <script src="scripts/global.js"></script>
   <script src="scripts/main.js"></script>
 </body>
