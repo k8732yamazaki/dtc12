@@ -20,6 +20,7 @@
 	background-color: var(--red);
 }
 
+/* carousel */
 .carousel-bg img {
 	position: absolute;
 	width: 70%;
@@ -96,7 +97,7 @@ input[type=submit] {
   background-color: DodgerBlue !important;
   color: #ffffff;
 }
-.profile-icon { 
+.profile-icon {
     width: 10vh;
     height: 10vh;
     margin: 0 auto;
